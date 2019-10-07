@@ -1,0 +1,258 @@
+* {
+    font-family: calibri;
+}
+
+/* //////////////// TOP BAR ///////////// */
+
+.top-bar {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-areas: "menu search profile";
+  }
+
+.menu {
+    margin: 0 auto;
+    grid-area: menu;
+    width: 50%;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.search { 
+    grid-area: search; 
+}
+  
+.profile { 
+    grid-area: profile; 
+    margin: 0 auto;
+}
+
+.profile img {
+    padding-right: 20px;
+}
+
+
+
+
+
+/* //////////////// products ////////////////// */
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.product {
+    width: 24%;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-window {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    transition: 0.5s;
+}
+
+.product-window:hover {
+    background-color: #474747;
+}
+
+.product-name {
+    clear:both;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-price {
+    clear:both;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sticker {
+    text-align: center;
+}
+
+
+
+/* ///////////////////////// cart /////////////////////////// */
+
+table.cart2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: top;
+  }
+  table.cart2 td, table.cart2 th {
+    border: 1px solid #AAAAAA;
+  }
+  table.cart2 tr:nth-child(even) {
+    background: #eaeaea;
+  }
+  table.cart2 tfoot td {
+    font-size: 14px;
+  }
+  table.cart2 tfoot .links {
+    text-align: right;
+  }
+  table.cart2 tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  .cart-total {
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+
+
+  /* ///////////////// login ////////////////// */
+
+  .login-window {
+      text-align: center;
+      padding-top: 50px;
+  }
+
+
+
+
+
+  /* ///////////////// responsive ///////////////////// */
+ 
+  @media only screen and (max-width: 900px) {
+
+    .product {
+        width: 49%;
+    }
+
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .top-bar {
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 100% 100% 100%;
+        grid-template-areas: "menu" "search" "profile";
+    }
+
+    .menu {
+        margin: 0 auto;
+        grid-area: menu;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: block;
+        list-style: none;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #474747;
+        padding: 10px 5px 5px 10px;
+        font-size: 18px;
+    }
+
+    .search { 
+        padding: 10px 0px 10px 0px;
+        grid-area: search; 
+        margin: 0 auto;
+    }
+
+    .profile { 
+        grid-area: profile; 
+        margin: 0 auto;
+    }
+    
+    .profile img {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .product {
+        width: 80%;
+        display: inline-block;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .product-name {
+        clear:both;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .product-price {
+        clear:both;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    table.cart2 {
+        width: 100%;
+    }
+
+    .sticker {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sticker-image img{
+        text-align: center;
+        width: 80%;
+        height: 100%;
+    }
+}
+
